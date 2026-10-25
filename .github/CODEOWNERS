@@ -1,0 +1,8 @@
+# .github/CODEOWNERS
+# Les derniers motifs l'emportent
+* @PerrierNicolasPerso @PerrierNicolas
+/.github/ @PerrierNicolasPerso
+/infra/ @PerrierNicolasPerso
+/app/ @PerrierNicolas
+/monitoring/ @lPerrierNicolas
+/docs/ @PerrierNicolasPerso @PerrierNicolas
