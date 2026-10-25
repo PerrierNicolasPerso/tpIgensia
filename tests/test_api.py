@@ -36,3 +36,9 @@ def test_reset_counter(client):
     # verifie que le compteur repart a 1
     resp = client.get("/")
     assert resp.json() == {"visites": 1}
+
+def test_root_header_version(client):
+    resp = client.get("/")
+    assert resp.status_code == 200
+    assert resp.headers.get("X-Visites-Version") == "0.1.0"
+
