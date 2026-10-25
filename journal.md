@@ -15,3 +15,16 @@ Q2:
 Q3:
 La signature SSH ou GPG Le commit contient une preuve cryptographyque lié à ma clé privée.Cela prouve mon identité.
 Sans cela on pourrait pas garantir l'identité de la personne ayant fait un commit.
+
+TP2:
+Q1:
+L'utilisation de geatlik aurait pu embêcher le secret d'arriver sur le main dans la plus par des cas.
+associé à un controle humain c'est encore mieux
+
+Q2:
+Non gitleaks en pre-commit ne protège que celui qui l'a installé sur sa machine.
+Il faudrait installer un scan gitleak dans le CI/CD githib actions et
+mettre une protection de branche oligatoire avant la fusion dans main
+
+Q3:
+les secrets restent privés quelques minutes voir secondes car des rebots scannent en continu les dépots publics à la recherche de clés compromises
