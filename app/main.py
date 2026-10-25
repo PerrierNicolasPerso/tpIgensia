@@ -30,7 +30,7 @@ async def metrics_middleware(request: Request, call_next):
 
 
 @app.get("/")
-def root(response:Response):
+def root(response: Response):
     response.headers["X-Visites-Version"] = "0.1.0"
     n = r.incr("visites")
     return {"visites": n}
@@ -49,7 +49,8 @@ def health():
 def metrics():
     return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
+
 @app.post("/reset")
 def reset():
-    r.set("visites",0)
-    return {"visites":0}
+    r.set("visites", 0)
+    return {"visites": 0}
