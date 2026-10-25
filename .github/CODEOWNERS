@@ -1,7 +1,7 @@
 # .github/CODEOWNERS
 # Les derniers motifs l'emportent
 * @PerrierNicolasPerso @PerrierNicolas
-/.github/ @PerrierNicolasPerso
+/.github/ @PerrierNicolasPerso @PerrierNicolas
 /infra/ @PerrierNicolasPerso
 /app/ @PerrierNicolas
 /monitoring/ @lPerrierNicolas
